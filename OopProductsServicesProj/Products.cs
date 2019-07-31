@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System;/
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,6 +10,9 @@ namespace OopProductsServicesProj {
 
         public decimal ProdTotal(decimal Price, int Units) {
             return Price * Units;
+        }
+
+       
         }
     }
 }

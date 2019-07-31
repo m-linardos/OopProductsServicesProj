@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace OopProductsServicesProj {
-    class SaleCategory {
+    public class SaleCategory {
 
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Name /*{ get; set; }*/;
 
 
 
@@ -14,7 +14,7 @@ namespace OopProductsServicesProj {
             return Rate * Hours;
         }
         */
-        public decimal GetSalesTotal(int ServTotal, decimal ProdTotal) {
+        public decimal GetSalesTotal(int ServTotal, decimal ProdTotal) {            
             return ServTotal * ProdTotal;
         }
 

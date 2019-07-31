@@ -5,8 +5,40 @@ namespace OopProductsServicesProj {
         static void Main(string[] args) {
             Console.WriteLine("Hello World!");
 
-            Services SupBasic = new Services();
-            SupBasic.Id = 2;
+            var pBW = new Products(1, "B W", 10, 2500);         //Did in class  
+
+
+
+
+            var sBS     //Did in class  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Services SupBasic = new Services();     // Can use 'var' in place of first word 'Services'
+            SupBasic.Id = 2;                // Can put values in parens and avoid writing the bottome 4 lines
             SupBasic.Name = "Basic Support";
             SupBasic.Rate = 50;
             SupBasic.Hours = 550;
@@ -42,6 +74,13 @@ namespace OopProductsServicesProj {
             WidgSupreme.Price = 50;
             WidgSupreme.Units = 1000;
 
+            var sales = new SaleCategory[] {                        //Did in class  // Can put new instance directly in array instead of in var
+                pBW, pAW, pSW, sBS, sPS, Sup247,
+
+                new Membership(21, "Basic Membership", 100, 500),       
+                new Membership(21, "Basic Membership", 100, 500),
+                new Membership(21, "Basic Membership", 100, 500)
+            };
 
             SalesCategory sc = new SalesCategory();
             decimal GetSalesTotal = sc.GetSalesTotal();
